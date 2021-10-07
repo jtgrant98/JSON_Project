@@ -26,3 +26,14 @@ print(mags)
 print(lons)
 print(lats)
 
+data = [Scattergeo(lon=lons, lat=lats)]
+
+my_layout = Layout(title='Global Earthquake 1 Day')
+
+fig = {'data': data, 'layout': my_layout}
+
+offline.plot(fig, filename='globalearthquake1day.html')
+
+
+
+
