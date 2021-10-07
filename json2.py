@@ -3,7 +3,7 @@ import json
 from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
 
-infile = open('eq_data_1_day_m1.json', 'r')
+infile = open('eq_data_30_day_m1.json', 'r')
 outfile = open('readable_eq_data.json', 'w')
 
 eq_data = json.load(infile)
@@ -34,8 +34,8 @@ print(lats[:5])
 
 data = [{
     'type':'scattergeo',
-    'lon':'lons',
-    'lat':'lats',
+    'lon':lons,
+    'lat':lats,
     'text':hover_texts,
     'marker':{
         'size':[5*mag for mag in mags],
