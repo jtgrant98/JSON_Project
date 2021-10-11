@@ -30,7 +30,7 @@ fire = [{
     'lon':lons,
     'lat':lats,
     'marker':{
-        'size':[flame % 5 for flame in flames],
+        'size':[flame % 20 for flame in flames],
         'color':flames,
         'colorscale':'Viridis',
         'reversescale':True,

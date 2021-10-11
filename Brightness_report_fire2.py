@@ -20,9 +20,9 @@ for i in fire_2:
         lons_2.append(lon_2)
         lats_2.append(lat_2)
 
-#print(flames[:5])
-#print(longs[:5])
-#print(lats[:5])
+print(flames_2[:5])
+print(lons_2[:5])
+print(lats_2[:5])
 
 
 fire_2 = [{
@@ -30,7 +30,7 @@ fire_2 = [{
     'lon':lons_2,
     'lat':lats_2,
     'marker':{
-        'size':[flame % 5 for flame in flames_2],
+        'size':[flame % 20 for flame in flames_2],
         'color':flames_2,
         'colorscale':'Viridis',
         'reversescale':True,
