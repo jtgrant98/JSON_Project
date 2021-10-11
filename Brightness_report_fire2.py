@@ -37,7 +37,7 @@ fire_2 = [{
         'colorbar':{'title':"Brightness"}}}]
 
 
-my_layout = Layout(title="Fire Brightness Report 9/14 to 9/21")
+my_layout = Layout(title="Fire Brightness Report 9/14 to 9/21",geo_scope = 'usa')
 
 fig = {"data": fire_2, "layout": my_layout}
 offline.plot(fig, filename="Firebrightnessreport2.html")

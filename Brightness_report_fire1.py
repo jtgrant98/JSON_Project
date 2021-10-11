@@ -37,7 +37,7 @@ fire = [{
         'colorbar':{'title':"Brightness"}}}]
 
 
-my_layout = Layout(title="Fire Brightness Report 9/1 to 9/13")
+my_layout = Layout(title="Fire Brightness Report 9/1 to 9/13", geo_scope = 'usa')
 
 fig = {'data': fire, 'layout': my_layout}
 
